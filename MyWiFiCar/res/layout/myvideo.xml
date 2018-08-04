@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"  
+    android:layout_width="fill_parent"  
+    android:layout_height="fill_parent"  
+    > 
+
+    <com.myView.MySurfaceView
+        android:id="@+id/mySurfaceViewVideo"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+    
+
+   	
+	<com.myView.RockerView 
+        android:id="@+id/rockerView"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"/>
+	
+	<com.myView.BallButton 
+	    android:id="@+id/ballbutton"
+	    android:layout_width="30dp"
+	    android:layout_height="120dp"
+	    android:layout_alignParentRight="true"
+	    android:layout_centerVertical="true"
+	    android:layout_marginRight="20dp"/>
+      
+      <Button
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:id="@+id/TakePhoto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/camera64"
+        
+        android:text="" />
+        
+       <Button
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="8dp"
+        android:id="@+id/Record"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/record48"
+        
+        android:text="" />
+      
+    <Button
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="8dp"
+        android:id="@+id/ViewPhoto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"   
+        android:background="@drawable/photo48"
+        android:text="" />
+   
+ 
+   	<RadioGroup
+        android:id="@+id/radioGroup1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginRight="128dp"
+        android:layout_marginTop="3dp"
+        android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/radio10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:drawableTop="@android:drawable/btn_radio"
+            android:gravity="center"
+            android:textSize="16dp"
+            android:text="自动" />
+
+        <RadioButton
+            android:id="@+id/radio11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:drawableTop="@android:drawable/btn_radio"
+            android:gravity="center"
+            android:textSize="16dp"
+            android:text="手动" 
+            android:checked="true"/>
+
+
+        
+        <RadioButton
+            android:id="@+id/radio13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:drawableTop="@android:drawable/btn_radio"
+            android:gravity="center"
+            android:textSize="16dp"
+            android:text="停止" />  
+    </RadioGroup>
+
+</RelativeLayout>
